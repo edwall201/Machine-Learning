@@ -49,7 +49,7 @@ plot_tree(clf, feature_names=X.columns, class_names=clf.classes_, filled=True)
 plt.show()
 
 # Predict for a new sample
-new_sample = pd.DataFrame({'outlook': ['sunny'], 'temperature': [80], 'humidity': [75], 'windy': [False]})
+new_sample = pd.DataFrame({'outlook': ['overcast'], 'temperature': [80], 'humidity': [75], 'windy': [False]})
 new_sample['outlook'] = encoder.transform(new_sample['outlook'])
 prediction = clf.predict(new_sample)
 print(f"The decision for the new sample is: {prediction[0]}")
