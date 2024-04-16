@@ -22,14 +22,14 @@
         - Test samples cannot be from trainning set
         - Knowlege leak is  **not allow** (fine tune their reslt): using test sample to be trainging sample
     - Binary classification
-       ![截圖 2024-02-26 下午5.25.30](https://hackmd.io/_uploads/BJqzYCYna.png)
+       ![截圖 2024-02-26 下午5.25.30](./img/2.png)
     - Model complexity
         - Model with low complexity: Higher training errors
         - Model with high complexity: Lower training errors
         - Complexity measured by **VC-dimension**
     
     - K-NN classifer
-    - ![截圖 2024-02-26 下午5.50.36](https://hackmd.io/_uploads/r1Kxky936.png)
+    - ![截圖 2024-02-26 下午5.50.36](./img/3.png)
         - When k = 3, star will be purple
         - When k = 6, star will be yellow
 
@@ -37,10 +37,10 @@
 ## VC dimension 03/04
 - **Definition of VC dimension**
     - Is a number of data points N could be classificatied. 
-     - ![截圖 2024-03-04 下午4.32.21](https://hackmd.io/_uploads/Hyf7PZmTp.png)
-    - ![截圖 2024-03-04 下午4.32.50](https://hackmd.io/_uploads/H1aEPb766.png)
+     - ![截圖 2024-03-04 下午4.32.21](./img/4.png)
+    - ![截圖 2024-03-04 下午4.32.50](./img/5.png)
     - **Use the retangle function to solve.**
-    ![截圖 2024-03-04 下午4.34.26](https://hackmd.io/_uploads/rJpqPb76T.png)
+    ![截圖 2024-03-04 下午4.34.26](./img/6.png)
     - Trainging sample should be large enough than VC dimension.
     - If the VC dimension, it would be overfitting. (Ein != Eout)
 ## 
@@ -86,7 +86,7 @@
 - **Mean Sequare Error (MSE)**
      - MSE = $E[(d-\theta)^2]$ = $E[(d - E[d])^2]$ + $(E[d(X)] - \theta)^2$ 
          = $Variance$ + $Bias^2$
-    - ![image](https://hackmd.io/_uploads/SkHKvsY0T.png)
+    - ![image](./img/7.png)
 
 ## Feature Selection
 - **Definition**
@@ -107,14 +107,14 @@
           Check the subsets with {b,a}, {b,c}, {b,d}`
         - Embedded method: Combing feature selection and classification in one phase
           e.g. **Lasso for regression**
-        ![截圖 2024-03-24 下午2.28.51](https://hackmd.io/_uploads/SJME_raC6.png)
+        ![截圖 2024-03-24 下午2.28.51](./img/8.png)
 - **Feature Extraction**
     -  Using PCA to compute a new feature vectors
     -  Feature(a, b, c, d) -> use(x, y)
        x = F(a, b, c, d), y = G(a, b, c, d)
 
 ## Decision Tree
-![image](https://hackmd.io/_uploads/rkptcra0a.png  =70%x)
+![image](./img/9.png  =70%x)
 
 - **Definition** 
     - Used for classification or regression
@@ -122,10 +122,10 @@
     - Can not handle continuous attributes
 - **Entropy**
     - Condition which is more difficult to predict has larger entropy
-    ![image](https://hackmd.io/_uploads/r1NrnB6CT.png  =70%x)
+    ![image](./img/10.png  =70%x)
 
 - **ID3 Algorithm**
-    - ![IMG_1427](https://hackmd.io/_uploads/ryOi1AGyC.jpg)
+    - ![IMG_1427](./img/11.png)
 
 - **C4.5**
     - C4.5 defines gain ration function as
@@ -150,7 +150,7 @@
     - Vector Quantization (VQ)
         - For data compression: Lossing
     - We want to find
-     ![image](https://hackmd.io/_uploads/r1p9Py7J0.png  =50%x)
+     ![image](./img/12.png  =50%x)
     - Algorithm
         1. 我們先設定好要分成多少(k)群。
 
@@ -182,7 +182,7 @@
 - **PCA VS ICA**
     - PCA is projection
     - ICA using distribution
-    - ![截圖 2024-04-01 下午4.38.50](https://hackmd.io/_uploads/rk8izxukA.png)
+    - ![截圖 2024-04-01 下午4.38.50](./img/13.png)
 - **LDA not mention**
 
 - **Optimization & Gradinent Desent Basics**
@@ -203,15 +203,15 @@
 - **Constrained Optimization**
     - Maximize $f(x,y)$ subject to $g(x,y) = 0$
 
-    - ![image](https://hackmd.io/_uploads/rJiNpAJlC.png)
+    - ![image](./img/14.png)
     - $\nabla{f} = \lambda \nabla{g}$ for some Lagrange multiplier
-    - ![image](https://hackmd.io/_uploads/rkA-ExegR.png =65%x)
+    - ![image](./img/15.png =65%x)
 - **KKT-conditions**
     - Extended to handle multivariable functions
 
     - min f(x) subject to h(x) <= 0and g(x) = 0
     - Similar trick as Lagrange multipliers
-    - ![image](https://hackmd.io/_uploads/BJWLTeee0.png =40%x)
+    - ![image](./img/15.png =40%x)
     - SVM is based on KTT condition.
 - **Gradient Descent Method**
     - $f(x) = w * x = w^Tx$
@@ -220,19 +220,19 @@
       and we know $f(x+u)=w^T(x+u) + b$ equals to $f(x)+w^Tx$
       Thus, $f(x+u)$ is minimal only if $u = - \frac{w}{||w||}$
     - Algorithm
-        ![image](https://hackmd.io/_uploads/Sy859DIxA.png)
+        ![image](./img/16.png)
 - **Regularizatino method**
     - Avoid overfitting by using regularization
     - 讓複雜的訓練參數簡單化
     - Using L1, L2 method
     
-    ![截圖 2024-04-15 晚上7.11.28](https://hackmd.io/_uploads/Sk0vsY9gR.png =80%x)
+    ![截圖 2024-04-15 晚上7.11.28](./img/17.png =80%x)
     
     - L2 regularization
-    ![截圖 2024-04-15 晚上7.13.22](https://hackmd.io/_uploads/S1kkhtcxR.png =80%x)
+    ![截圖 2024-04-15 晚上7.13.22](./img/18.png =80%x)
 
     - L1 regularization
-    ![image](https://hackmd.io/_uploads/BJFCN9clA.png =110%x)
+    ![image](./img/19.png =110%x)
 
 
 
