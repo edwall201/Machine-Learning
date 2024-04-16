@@ -114,7 +114,7 @@
        x = F(a, b, c, d), y = G(a, b, c, d)
 
 ## Decision Tree
-![image](./img/9.png  =70%x)
+![image](./img/9.png)
 
 - **Definition** 
     - Used for classification or regression
@@ -125,7 +125,7 @@
     ![image](./img/10.png  =70%x)
 
 - **ID3 Algorithm**
-    - ![IMG_1427](./img/11.png)
+    - ![IMG_1427](./img/11.jpeg)
 
 - **C4.5**
     - C4.5 defines gain ration function as
@@ -150,7 +150,7 @@
     - Vector Quantization (VQ)
         - For data compression: Lossing
     - We want to find
-     ![image](./img/12.png  =50%x)
+     ![image](./img/12.png)
     - Algorithm
         1. 我們先設定好要分成多少(k)群。
 
@@ -205,13 +205,13 @@
 
     - ![image](./img/14.png)
     - $\nabla{f} = \lambda \nabla{g}$ for some Lagrange multiplier
-    - ![image](./img/15.png =65%x)
+    - ![image](./img/15.png)
 - **KKT-conditions**
     - Extended to handle multivariable functions
 
     - min f(x) subject to h(x) <= 0and g(x) = 0
     - Similar trick as Lagrange multipliers
-    - ![image](./img/15.png =40%x)
+    - ![image](./img/16.png)
     - SVM is based on KTT condition.
 - **Gradient Descent Method**
     - $f(x) = w * x = w^Tx$
@@ -220,19 +220,19 @@
       and we know $f(x+u)=w^T(x+u) + b$ equals to $f(x)+w^Tx$
       Thus, $f(x+u)$ is minimal only if $u = - \frac{w}{||w||}$
     - Algorithm
-        ![image](./img/16.png)
+        ![image](./img/17.png)
 - **Regularizatino method**
     - Avoid overfitting by using regularization
     - 讓複雜的訓練參數簡單化
     - Using L1, L2 method
     
-    ![截圖 2024-04-15 晚上7.11.28](./img/17.png =80%x)
+    ![截圖 2024-04-15 晚上7.11.28](./img/18.png)
     
     - L2 regularization
-    ![截圖 2024-04-15 晚上7.13.22](./img/18.png =80%x)
+    ![截圖 2024-04-15 晚上7.13.22](./img/19.png)
 
     - L1 regularization
-    ![image](./img/19.png =110%x)
+    ![image](./img/20.png)
 
 
 
