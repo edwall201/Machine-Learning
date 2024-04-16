@@ -2,7 +2,7 @@
 ## CH1 Intro of ML 02/26
 - **Classification problem**
 
-    ![截圖 2024-02-26 下午4.20.01](https://hackmd.io/_uploads/B1R3t6F3p.png)
+    ![截圖 2024-02-26 下午4.20.01](./img/1.png)
     - Meaning of regression
         - Determine the strengthen and character of the relationship.
     - CLassification vs regression
