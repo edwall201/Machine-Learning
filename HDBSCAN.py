@@ -18,4 +18,3 @@ hclusterer = hdbscan.HDBSCAN(min_cluster_size=5).fit(X)
 plt.figure(figsize = (10, 10))
 plt.scatter(X[:, 0], X[:, 1], c = hclusterer.labels_)
 plt.show()
-
